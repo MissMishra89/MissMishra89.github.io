@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+          /* Reset & basic styling */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+          }
+
+          body {
+            min-height: 100vh;
+            background-color: black;
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-x: hidden;
+          }
+
+          @keyframes gradientBG {
+            0% {
+              background-position: 0% 50%;
+              background-color: black;
+            }
+            50% {
+              background-position: 100% 50%;
+              background-color: gray;
+            }
+            100% {
+              background-position: 0% 50%;
+              background-color: rgb(197, 197, 197);
+            }
+          }
+          #main-container {
+            max-width: 700px;
+            /* background-color: blueviolet; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-x: hidden;
+            animation: maincont 5s 3s infinite linear;
+            box-shadow: 5px 5px black;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3239444.jpg&f=1&nofb=1&ipt=051198be3b1f8373810aeba378c5a2b4092ab95e335071c0df30ab4a95e16738);
+           <video autoplay muted loop id="background-video">
+      <source src="your-video.mp4" type="video/mp4">
+       </video>}
+          @keyframes maincont {
+            from {
+              width: 850px;
+              background-color: #fbc2eb;
+              border-radius: 60px;
+              background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.4eQEtI9t-o_MQZxrC_F3SgHaEU%3Fpid%3DApi&f=1&ipt=edba89c8880e5c2c8fb2a512481bea57c753b5afc4cf18da18a937566f675f4c&ipo=images);
+              color: grey;
+            }
+            to {
+              width: 900px;
+              background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.KmkFjBLupS8AxAW4DoRu3gHaE8%3Fpid%3DApi&f=1&ipt=9bede2a9a50520a608a1f70787d49889eb891e79c32314d0b06df8bc647f9236&ipo=images);
+              border-radius: 270px;
+              border: 6px solid plum;
+              color: black;
+            }
+          }
+
+          header {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+            color: #fff;
+          }
+
+          header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          }
+
+          header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+          }
+
+          .portfolio-section {
+            margin: 30px 0;
+            text-align: center;
+            color: #fff;
+          }
+
+          .portfolio-section img {
+            max-width: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: float 3s ease-in-out infinite;
+          }
+
+          @keyframes float {
+            0% {
+              transform: translateY(0);
+              transform: translateX(0);
+            }
+            50% {
+              transform: translateY(-20px);
+              transform: translateX(80px);
+            }
+            100% {
+              transform: translateY(0);
+              transform: translateX(-80px);
+            }
+          }
+
+          /* Endless game canvas */
+          #gameCanvas {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin: 2rem auto;
+            display: block;
+          }
+
+          footer {
+            margin-top: 3rem;
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+          }
+          #information-cont {
+            min-width: 400px;
+            border: 3px solid black;
+            height: 200px;
+            margin: 40px;
+            padding: 30px;
+          }
+          @media screen and (max-width: 767px) {
+            body {
+              min-height: 60vh;
+              background-color: black;
+              background-size: 400% 400%;
+              min-width: 500px;
+              margin: 0;
+              padding: 0;
+            }
+            @keyframes gradientBG {
+            0% {
+              background-position: 0% 20%;
+              background-color: black;
+            }
+            50% {
+              background-position:  50% 10%;
+              background-color: gray;
+            }
+            100% {
+              background-position: 0% 20%;
+              background-color: rgb(197, 197, 197);
+            }
+
+            #main-container {
+              max-width: 500px;
+              /* background-color: blueviolet; */
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              overflow-x: hidden;
+              animation: maincont 5s 3s infinite linear;
+              box-shadow: 5px 5px black;
+              background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3239444.jpg&f=1&nofb=1&ipt=051198be3b1f8373810aeba378c5a2b4092ab95e335071c0df30ab4a95e16738);
+            }
+            @keyframes maincont {
+              from {
+                width: 700px;
+                background-color: #fbc2eb;
+                border-radius: 60px;
+                background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.4eQEtI9t-o_MQZxrC_F3SgHaEU%3Fpid%3DApi&f=1&ipt=edba89c8880e5c2c8fb2a512481bea57c753b5afc4cf18da18a937566f675f4c&ipo=images);
+                color: grey;
+              }
+              to {
+                width: 900px;
+                background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.KmkFjBLupS8AxAW4DoRu3gHaE8%3Fpid%3DApi&f=1&ipt=9bede2a9a50520a608a1f70787d49889eb891e79c32314d0b06df8bc647f9236&ipo=images);
+                border-radius: 270px;
+                border: 6px solid plum;
+                color: black;
+              }
+            }
+          }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <h1 style="text-shadow: 5px 5px gray">My Creative Portfolio</h1>
+        <p style="text-shadow: 1.9px 1.9px gray; font-size: 25px">
+          Welcome! Explore my projects and endless game below.
+        </p>
+      </header>
+
+      <section class="portfolio-section">
+        <h2>About Me</h2>
+        <p></p>
+        <img
+          src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif"
+          alt="Creative GIF"
+        />
+        <p style="font-size: 22px; text-shadow: 1px 1px black">
+          Hi! I am a Khushi Mishra passionate about interactive web experiences.
+        </p>
+      </section>
+
+      <section class="portfolio-section">
+        <h2>Endless Game: Catch the Circle</h2>
+        <canvas
+          id="gameCanvas"
+          width="400"
+          height="300"
+          style="background-color: black"
+        ></canvas>
+        <p>
+          Use arrow keys to move the square and catch the falling circles! Score
+          increases endlessly.
+        </p>
+      </section>
+
+      <footer>
+        <p>© 2025 My Portfolio | Hosted on GitHub Pages</p>
+      </footer>
+
+      <script>
+        // Endless Game: Catch the Circle
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const player = { x: 280, y: 250, width: 40, height: 40, speed: 7 };
+        const circle = { x: Math.random() * 260, y: 0, radius: 20, speed: 3 };
+        let score = 0;
+
+        const keys = {};
+
+        document.addEventListener("keydown", (e) => (keys[e.key] = true));
+        document.addEventListener("keyup", (e) => (keys[e.key] = false));
+
+        function gameLoop() {
+          // Clear canvas
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          // Move player
+          if (keys["ArrowLeft"] && player.x > 0) player.x -= player.speed;
+          if (keys["ArrowRight"] && player.x + player.width < canvas.width)
+            player.x += player.speed;
+
+          // Draw player
+          ctx.fillStyle = "#ffeb3b";
+          ctx.fillRect(player.x, player.y, player.width, player.height);
+
+          // Move circle
+          circle.y += circle.speed;
+
+          // Reset circle if it reaches bottom
+          if (circle.y > canvas.height) {
+            circle.y = 0;
+            circle.x = Math.random() * (canvas.width - circle.radius * 2);
+          }
+
+          // Draw circle
+          ctx.fillStyle = "#ff5252";
+          ctx.beginPath();
+          ctx.arc(
+            circle.x + circle.radius,
+            circle.y + circle.radius,
+            circle.radius,
+            0,
+            Math.PI * 2
+          );
+          ctx.fill();
+
+          // Check collision
+          if (
+            circle.x + circle.radius > player.x &&
+            circle.x < player.x + player.width &&
+            circle.y + circle.radius > player.y &&
+            circle.y < player.y + player.height
+          ) {
+            score++;
+            circle.y = 0;
+            circle.x = Math.random() * (canvas.width - circle.radius * 2);
+          }
+
+          // Draw score
+          ctx.fillStyle = "#fff";
+          ctx.font = "20px Arial";
+          ctx.fillText("Score: " + score, 10, 30);
+
+          requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+      </script>
+    </div>
+  </body>
+</html>
